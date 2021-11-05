@@ -53,15 +53,15 @@ Aqui estão os mais comuns:
 '''
 
 import logging #Importando o módulo
-logging.basicConfig(    #Fornecendo o nivel usada
+logging.basicConfig(    #Fornecendo o nivel usado
     filename='info.log', #Especifica o arquivo onde as imformações devem ser armazenadas
     level= logging.DEBUG, #Espeficica o nível de gravidade definido pela raiz
     format='%(levelname)s %(asctime)s : %(message)s', #Define o formato que a mensagem de log é inserida no arquivo
     datefmt='%d/%m?%Y %H:%M:%S'# Define o formato de data e hora
 )
 
-logger = logging.StreamHandler() #  # Craia instancia de gerenciamento
-logging.getLogger('').addHandler(logger) #Cria instancia e usa para chamar o lopper
+logger = logging.StreamHandler() #  # Cria instancia de gerenciamento
+logging.getLogger('').addHandler(logger) #Cria instancia e usa para chamar o logger
 
 logging.debug('Isso é uma mensagem nivel debug') #Usando o objeto para chamar a função Debug
 logging.info('Issso é uma mensagem nivel info') #Usando o objeto para chamar a função Info
